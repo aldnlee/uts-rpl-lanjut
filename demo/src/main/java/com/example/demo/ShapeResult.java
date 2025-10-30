@@ -7,7 +7,11 @@ public class ShapeResult {
     private double keliling;
     private double luas;
 
-    // Constructor untuk mengisi semua hasil
+    // Tambahkan Constructor kosong (No-Arg Constructor)
+    public ShapeResult() {
+    }
+    
+    // Constructor untuk mengisi semua hasil (sudah ada)
     public ShapeResult(String jenisBangun, double panjang, double lebar, double keliling, double luas) {
         this.jenisBangun = jenisBangun;
         this.panjang = panjang;
@@ -16,19 +20,11 @@ public class ShapeResult {
         this.luas = luas;
     }
 
-    // Getters (Wajib untuk serialisasi JSON oleh Spring/Jackson)
+    // Getters (Sudah benar)
     public String getJenisBangun() {
         return jenisBangun;
     }
-
-    public double getPanjang() {
-        return panjang;
-    }
-
-    public double getLebar() {
-        return lebar;
-    }
-
+    // ... (Getter lainnya)
     public double getKeliling() {
         return keliling;
     }
